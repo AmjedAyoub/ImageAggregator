@@ -1,7 +1,11 @@
 main {
     flex: 1 0 auto;
 }
-
+h4 {
+    text-align: center;
+    color: rgba(0, 101, 148, 0.7);
+    text-shadow: 1px 1px #c9c9c9;
+}
 .page-footer {
     position: fixed;
     margin-bottom: 0%;
@@ -32,6 +36,11 @@ nav .brand-logo {
 nav ul a {
     font-size: 1.5rem;
     color: #d7f7ff;
+}
+/* style updates on the mobile nav bar*/
+.sidenav{
+    height: 20%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .flip-card {
@@ -163,29 +172,32 @@ body {
     /* float: left;*/
     width: -webkit-fill-available;
 }
-
+/* advanced dropdown text styling */
 .advBody {
     display: flex;
     justify-content: space-around;
+    text-align: center;
+    color: rgba(43, 42, 42, 0.7);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#collapseadv {
+/* I don't think this is necessary */
+/* #collapseadv {
     justify-content: space-evenly;
-}
+} */
 
 #photographer {
     /* float: left; */
-    border: 1px solid gray;
+    border: 1px solid rgba(119, 116, 116, 0.3);
     width: 250px;
+    border-radius: 2%;
 }
 
 #AdvSearh {
     text-align: center;
-    border-top: 1px solid #bbb;
 }
 
 #AdvSearchBtn {
-    border: 1px solid rgb(60, 60, 61);
     margin: 2px;
     padding: 2px;
 }

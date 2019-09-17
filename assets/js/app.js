@@ -105,3 +105,7 @@ function displaySearch() {
         }
     })
 }
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
