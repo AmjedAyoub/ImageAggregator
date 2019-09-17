@@ -8,23 +8,31 @@ main {
     bottom: 0;
     width: 100%;
 }
+
+
 /* Nav bar style changes */
-.nav-wrapper{
+
+.nav-wrapper {
     background: #0cb9e4;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: 1px 1px #777474;
 }
+
+
 /* Name style changes */
-nav .brand-logo{
-    margin-left:5%;
+
+nav .brand-logo {
+    margin-left: 5%;
     color: #d7f7ff;
 }
+
+
 /* Home and About nav bar styling */
+
 nav ul a {
     font-size: 1.5rem;
     color: #d7f7ff;
 }
-
 
 .flip-card {
     background-color: transparent;
@@ -136,7 +144,8 @@ body {
     float: left;
     width: 50px;
 }
-.card-header{
+
+.card-header {
     background: rgba(253, 253, 253, 0.6);
 }
 
@@ -185,7 +194,9 @@ body {
     width: 100px;
 }
 
+
 /* spacing and image position */
+
 #imgSearchFlip {
     float: left;
     margin: 1%;
@@ -201,19 +212,20 @@ body {
 
 .column {
     flex: 1 0 auto;
-  }
-  
-  /* added styling to footer */
-  .page-footer{
-      background-color:#0cb9e4;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      color: #d7f7ff; 
-      text-shadow: 1px 1px #8b8b8b;
-      position: fixed;
-      margin-bottom: 0%;
-      bottom: 0;
-      width: 100%;
-  
+}
+
+
+/* added styling to footer */
+
+.page-footer {
+    background-color: #0cb9e4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #d7f7ff;
+    text-shadow: 1px 1px #8b8b8b;
+    position: fixed;
+    margin-bottom: 0%;
+    bottom: 0;
+    width: 100%;
 }
 
 
@@ -297,4 +309,10 @@ body {
 
 .title {
     color: grey;
+}
+
+.advForm {
+    display: inline-flex;
+    width: 100px;
+    width: -webkit-fill-available;
 }
