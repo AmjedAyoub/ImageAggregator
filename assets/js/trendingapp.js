@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+    var linkData;
+    var photographerData;
     //my onclicks ----------------------------------------
     //carousel-items click event
     $(document).on("click", ".carousel-item", function () {
@@ -11,9 +14,9 @@ $(document).ready(function () {
             //in the case of the type first
             case "first":
                 //store the photographer class data into a var
-                var photographerData = $(this).attr("photographer");
+                photographerData = $(this).attr("photographer");
                 //store the link class data into a var
-                var linkData = $(this).attr("link");
+                 linkData = $(this).attr("link");
             
                 //adding an image 
                 var newModalImg = $("<img>");
@@ -25,7 +28,9 @@ $(document).ready(function () {
                 //appending everything to the Modal 
                 $(".modal-content").append(newModalImg);
                 $(".modal-content").append("<br>"+"Photographer: " + photographerData + "<br>");
-                $(".modal-content").append("Link: " + "<a>" + linkData + "</a>");
+                $(".modal-content").append("Link: " + "<a href=" + linkData + ">" + linkData +"</a>");
+                $(".modal-content").append("<input type=text value = "+linkData+" id=hiddenfield></input>")
+                $("#hiddenfield").hide();
                 break;
     
             case "second":
@@ -41,7 +46,9 @@ $(document).ready(function () {
     
                 $(".modal-content").append(newModalImg);
                 $(".modal-content").append("<br>"+"UserName: " + userNameData + "<br>");
-                $(".modal-content").append("Link: " + "<a>" + linkData + "</a>");
+                $(".modal-content").append("Link: " + "<a href=" + linkData + ">" + linkData +"</a>");
+                $(".modal-content").append("<input type=text value = "+linkData+" id=hiddenfield></input>")
+                $("#hiddenfield").hide();
     
                 break;
     
@@ -56,7 +63,11 @@ $(document).ready(function () {
                 newModalImg.height(100).width(100)
                 $(".modal-content").append(newModalImg);
                 $(".modal-content").append("<br>" + "Title: " + displayName + "<br>");
-                $(".modal-content").append("Link: " + "<a>" + linkData + "</a>");
+                $(".modal-content").append("Link: " + "<a href=" + linkData + ">" + linkData +"</a>");
+                $(".modal-content").append("<input type=text value = "+linkData+" id=hiddenfield></input>")
+                $("#hiddenfield").hide();
+                
+                
                 break;
     
     
@@ -72,8 +83,12 @@ $(document).ready(function () {
     //modal copy click event
 
     $("#modalCopyButton").click(function(){
-        linkData.select();
+         var toCopy = document.getElementById("hiddenfield");
+         console.log("work dammit", toCopy.value);
+         $(toCopy).show()
+        toCopy.select();
         document.execCommand('copy');
+        $(toCopy).hide();
     });
 
 
@@ -222,7 +237,35 @@ $(document).ready(function () {
 
 
 
-  
+    // $(document).on("click", ".carousel-item", function() {
+    //     var img = $(this);
+    // var posLeft = ($this.offset().left)-10
+    // var posTop = ($this.offset().top)-10
+    // $('.popup', $this).css({
+    //                             // position: 'fixed',
+    //                             // // top: posTop,
+    //                             // // left: posLeft
+    //                             width: '400px',
+    //                             height: '400px'
+    // }).fadeIn('fast');
+    // if(!clicked){
+    // img.css("width", '600px');
+    // img.css("height", '400px');
+    // img.css("transform:", '{translateX(500px), translateY(50px), translateX(0px), translateZ(0px)}');
+
+
+
+    // clicked = true;
+    // }else {
+    //     clicked = false;
+    //     img.css("width", '300px');
+    //     img.css("height", '300px');
+    //     img.css("transform:", '{translateX(648px), translateY(50px), translateX(0px), translateZ(0px)}');
+
+    // }
+    // }).mouseleave(function() {
+    //     $('.popup', this).fadeOut('fast');
+    // });
 
 
 
