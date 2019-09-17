@@ -26,9 +26,9 @@
 
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
+            <a href="#" class="brand-logo">ImageWow!</a>
             <ul id="nav-mobile" class="right">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Trending</a></li>
                 <li><a href="search.html">Search</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
@@ -42,41 +42,43 @@
                     <input id="searchBox" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <i class="searchBtn glyphicon glyphicon-search"> Search</i>
                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseadv">
-            Advanced
-          </a>
+                       Advanced
+                   </a>
                 </div>
                 <div id="collapseadv" class="collapse" data-parent="#accordion">
                     <div class="card-body">
                         <div class=" advBody">
-                            <strong>Size: </strong>
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-toggle="dropdown">Select</button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Large</a></li>
-                                    <li><a href="#">Medium</a></li>
-                                    <li><a href="#">Small</a></li>
-                                </ul>
-                            </div>
 
-                            <strong>Type: </strong>
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-toggle="dropdown">Select</button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">.jpg</a></li>
-                                    <li><a href="#">.gif</a></li>
-                                    <li><a href="#">.jpeg</a></li>
-                                </ul>
-                            </div>
 
-                            <strong>Site: </strong>
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-toggle="dropdown">Select</button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Pexels</a></li>
-                                    <li><a href="#">Unsplash</a></li>
-                                    <li><a href="#">Giphy</a></li>
-                                </ul>
-                            </div>
+                            <form>
+                                <strong>Size: </strong>
+                                <select class="advForm sizeImg" name="size">
+                                <option value="select" selected>Select</option>
+                                  <option value="large">Large</option>
+                                  <option value="medium">Medium</option>
+                                  <option value="small">Small</option>
+                                </select>
+                            </form>
+
+                            <form>
+                                <strong>Type: </strong>
+                                <select class="advForm typeImg" name="type">
+                                    <option value="select" selected>Select</option>
+                                      <option value=".jpg">.jpg</option>
+                                      <option value=".gif">.gif</option>
+                                      <option value=".jpeg">.jpeg</option>
+                                    </select>
+                            </form>
+
+                            <form>
+                                <strong>Site: </strong>
+                                <select class="advForm siteImg" name="site">
+                                    <option value="select" selected>Select</option>
+                                      <option value="giphy">Giphy</option>
+                                      <option value="pexels">Pexels</option>
+                                      <option value="unsplash">Unsplash</option>
+                                    </select>
+                            </form>
 
                             <strong>Photographer: </strong>
                             <input id="photographer" type="text">
@@ -102,6 +104,7 @@
     <footer class="page-footer">
         <div class="footer-copyright">
             <div class="container">
+                © 2032 Copyright (shh....we're from the future)
                 <!-- © 2014 Copyright Text -->
                 <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
