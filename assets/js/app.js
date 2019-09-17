@@ -69,6 +69,9 @@ $(document).on("click", ".flip-card", function() {
 });
 
 
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
 
 
 
@@ -229,3 +232,4 @@ function err() {
 
 
 }
+
