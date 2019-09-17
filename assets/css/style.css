@@ -26,31 +26,6 @@ nav ul a {
 }
 
 
-
-/* .cardContainer { */
-
-
-/* Box-model */
-
-
-/* width: 1024px; */
-
-
-/* Positioning */
-
-
-/* margin: 0 auto;
-
-    color:#4F84C4;
-  } */
-
-.col {
-    float: left;
-    width: 25%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
-
 .flip-card {
     background-color: transparent;
     width: 250px;
@@ -146,7 +121,6 @@ body {
     z-index: 9;
 }
 
-
 #searchBox {
     border-radius: 50px;
     border-color: #0069be;
@@ -174,10 +148,6 @@ body {
 #accordion {
     align-self: center;
     width: 100%;
-}
-
-p {
-    /* float: left; */
 }
 
 .dropdown {
@@ -227,16 +197,6 @@ p {
 }
 
 
-/* Display the columns below each other instead of side by side on small screens */
-
-@media screen and (max-width: 680px) {
-    .col {
-        width: 100%;
-        display: block;
-    }
-}
-
-
 /* Three columns side by side */
 
 .column {
@@ -253,27 +213,7 @@ p {
       margin-bottom: 0%;
       bottom: 0;
       width: 100%;
-  }
-
   
-  /* .cardContainer { */
-    /* Box-model */
-    /* width: 1024px; */
-  
-    /* Positioning */
-    /* margin: 0 auto;
-
-    color:#4F84C4;
-  } */
-
-
-  .col {
-
-    float: left;
-    width: 25%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-
 }
 
 
@@ -297,6 +237,35 @@ p {
     }
     .flip-card {
         width: 50%;
+    }
+}
+
+
+/* Display the columns below each other instead of side by side on small screens */
+
+
+/* Three columns side by side */
+
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+
+/* Display the columns below each other instead of side by side on small screens */
+
+@media screen and (max-width: 680px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 15px;
     }
 }
 
@@ -329,54 +298,3 @@ p {
 .title {
     color: grey;
 }
-  }
-  
-  /* Display the columns below each other instead of side by side on small screens */
-  @media screen and (max-width: 680px) {
-    .col {
-      width: 100%;
-      display: block;
-    }
-  }
-
-        
-        /* Three columns side by side */
-        .column {
-          float: left;
-          width: 25%;
-          margin-bottom: 16px;
-          padding: 0 8px;
-        }
-        
-        /* Display the columns below each other instead of side by side on small screens */
-        @media screen and (max-width: 650px) {
-          .column {
-            width: 100%;
-            display: block;
-          }
-        }
-        
-        
-        /* Add some shadows to create a card effect */
-        .card {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-        
-        /* Some left and right padding inside the container */
-        .container {
-          /* padding: 0 16px; */
-          margin:0 auto;
-          font-size: small;
-        }
-        
-        /* Clear floats */
-        .container::after, .row::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
-        
-        .title {
-          color: grey;
-        }
-
