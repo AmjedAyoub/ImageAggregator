@@ -8,6 +8,23 @@ main {
     bottom: 0;
     width: 100%;
 }
+/* Nav bar style changes */
+.nav-wrapper{
+    background: #0cb9e4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 1px #777474;
+}
+/* Name style changes */
+nav .brand-logo{
+    margin-left:5%;
+    color: #d7f7ff;
+}
+/* Home and About nav bar styling */
+nav ul a {
+    font-size: 1.5rem;
+    color: #d7f7ff;
+}
+
 
 
 /* .cardContainer { */
@@ -67,6 +84,7 @@ main {
 
 .flip-card-front,
 .flip-card-back {
+    box-shadow: #000000;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -85,13 +103,13 @@ main {
 /* Style the back side */
 
 .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: rgba(0, 101, 148, 0.3);
+    color: rgb(65, 65, 65);
     transform: rotateY(180deg);
 }
 
 body {
-    background: #f1f1f1;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 @keyframes coverflow {
@@ -131,7 +149,8 @@ body {
 
 #searchBox {
     border-radius: 50px;
-    background: whitesmoke;
+    border-color: #0069be;
+    background: rgba(219, 246, 255, 0.6);
     text-align: center;
     width: 75%;
     float: left;
@@ -143,9 +162,13 @@ body {
     float: left;
     width: 50px;
 }
+.card-header{
+    background: rgba(253, 253, 253, 0.6);
+}
 
 .adv {
     text-align: end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #accordion {
@@ -183,7 +206,7 @@ p {
 }
 
 #AdvSearchBtn {
-    border: 1px solid rgb(71, 71, 219);
+    border: 1px solid rgb(60, 60, 61);
     margin: 2px;
     padding: 2px;
 }
@@ -192,13 +215,15 @@ p {
     width: 100px;
 }
 
+/* spacing and image position */
 #imgSearchFlip {
     float: left;
-    margin: 1px;
+    margin: 1%;
 }
 
 #imgSearch {
     justify-content: space-evenly;
+    margin-left: 6.5%;
 }
 
 
@@ -215,11 +240,15 @@ p {
 /* Three columns side by side */
 
 .column {
-  main {
     flex: 1 0 auto;
   }
   
+  /* added styling to footer */
   .page-footer{
+      background-color:#0cb9e4;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #d7f7ff; 
+      text-shadow: 1px 1px #8b8b8b;
       position: fixed;
       margin-bottom: 0%;
       bottom: 0;
@@ -275,7 +304,7 @@ p {
 /* Add some shadows to create a card effect */
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(119, 116, 116, 0.3);
 }
 
 
