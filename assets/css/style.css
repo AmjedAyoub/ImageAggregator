@@ -127,10 +127,6 @@ body {
     width: 100%;
 }
 
-p {
-    /* float: left; */
-}
-
 .dropdown {
     /* float: left;*/
     width: -webkit-fill-available;
@@ -229,6 +225,12 @@ p {
     .column {
         width: 100%;
         display: block;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 15px;
     }
 }
 
