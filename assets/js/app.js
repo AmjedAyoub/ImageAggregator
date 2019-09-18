@@ -73,10 +73,44 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
   });
 
+  $(document).on("click", ".flip-card", function() {
+
+    var itemUrl = $(this).attr("data-url");
+
+    //grabbing the carrousel "type" to grab on click 
+    //empty the modal before adding anything else in 
+    $(".modal-content").empty();
+    
+               //store the photographer class data into a var
+           
+            //store the link class data into a var
+             linkData = itemUrl;
+        
+            //adding an image 
+            var newModalImg = $("<img>"); 
+            //adding the src with the link to the class of src assigned to the image in the AJAX call
+            newModalImg.attr("src", itemUrl)
+            newModalImg.attr("class","ModalPicture")
+
+            //giving the image a smaller size
+            //  newModalImg.height(370).width(530)
+
+            //appending everything to the Modal 
+            $(".modal-content").append(newModalImg);
+            $(".modal-content").append("<br>"+"<a href=" + linkData + ">" + `<div class="waves-effect waves-green btn-flat">Link` +"</a>");
+
+            $('#modal1').modal();
+            $('#modal1').modal("open");
+          
+    
+});
+
+
 
 
 function displaySearch() {
     if ((selectedSite === "select" || selectedSite === "pexels") && (selectedType === "select" || selectedSite === ".jpeg")) {
+        console.log("test");
         $.ajax({
             headers: {
                 'Authorization': '563492ad6f917000010000017098dda7af7c4fb4a3fb3db88f792ca6',
@@ -84,7 +118,7 @@ function displaySearch() {
             url: "https://api.pexels.com/v1/search?query=" + userInput,
             method: "GET"
         }).then(function(params) {
-            // console.log(params);
+            console.log(params);
             for (let i = 0; i < params.photos.length; i++) {
 
                 var newflip = $("<div class='flip-card' id='imgSearchFlip'>");
