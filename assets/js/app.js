@@ -77,6 +77,39 @@ $(document).ready(function() {
     $('.sidenav').sidenav();
 });
 
+$(document).on("click", ".flip-card", function() {
+
+    var itemUrl = $(this).attr("data-url");
+
+    //grabbing the carrousel "type" to grab on click 
+    //empty the modal before adding anything else in 
+    $(".modal-content").empty();
+
+    //store the photographer class data into a var
+
+    //store the link class data into a var
+    linkData = itemUrl;
+
+    //adding an image 
+    var newModalImg = $("<img>");
+    //adding the src with the link to the class of src assigned to the image in the AJAX call
+    newModalImg.attr("src", itemUrl)
+    newModalImg.attr("class", "ModalPicture")
+
+    //giving the image a smaller size
+    //  newModalImg.height(370).width(530)
+
+    //appending everything to the Modal 
+    $(".modal-content").append(newModalImg);
+    $(".modal-content").append("<br>" + "<a href=" + linkData + ">" + `<div class="waves-effect waves-green btn-flat">Link` + "</a>");
+
+    $('#modal1').modal();
+    $('#modal1').modal("open");
+
+
+});
+
+
 
 
 function displaySearch() {
@@ -113,7 +146,7 @@ function displaySearch() {
                     var newinfo1 = $("<h5>");
                     newinfo1.text(params.photos[i].photographer);
                     var newinfo2 = $("<h5>");
-                    newinfo2.text(params.photos[i].photographer_url);
+                    newinfo2.text("Photographer: " + params.photos[i].photographer_url);
                     var newinfo3 = $("<h5>");
                     newinfo3.text("Site: www.Pexels.com");
                     newcardBack.append(newinfo1, newinfo2, newinfo3);
@@ -140,7 +173,7 @@ function displaySearch() {
                     newcardFront.append(newimg);
                     var newcardBack = $("<div class='flip-card-back' style='width:250px;height:200px'>");
                     var newinfo1 = $("<h5>");
-                    newinfo1.text(params.photos[i].photographer);
+                    newinfo1.text("Photographer: " + params.photos[i].photographer);
                     var newinfo2 = $("<h5>");
                     newinfo2.text(params.photos[i].photographer_url);
                     var newinfo3 = $("<h5>");
@@ -187,7 +220,7 @@ function displaySearch() {
                     newcardFront.append(newimg);
                     var newcardBack = $("<div class='flip-card-back' style='width:250px;height:200px'>");
                     var newinfo1 = $("<h5>");
-                    newinfo1.text(results[j].user.name);
+                    newinfo1.text("Photographer: " + results[j].user.name);
                     var newinfo2 = $("<h5>");
                     newinfo2.text(results[j].user.links.html);
                     var newinfo3 = $("<h5>");
@@ -221,12 +254,14 @@ function displaySearch() {
                     newcardFront.append(newimg);
                     var newcardBack = $("<div class='flip-card-back' style='width:250px;height:200px'>");
                     var newinfo1 = $("<h5>");
-                    newinfo1.text(results[j].user.name);
+                    newinfo1.text("Photographer: " + results[j].user.name);
                     var newinfo2 = $("<h5>");
                     newinfo2.text(results[j].user.links.html);
                     var newinfo3 = $("<h5>");
                     newinfo3.text("Site: www.Unsplash.com");
-                    newcardBack.append(newinfo1, newinfo2, newinfo3);
+                    var newinfo4 = $("<h5>");
+                    newinfo4.text("Description: " + results[j].alt_description);
+                    newcardBack.append(newinfo1, newinfo2, newinfo4, newinfo3);
                     newcard.append(newcardFront, newcardBack);
                     newflip.append(newcard);
                     $("#imgSearch").append(newflip);
