@@ -102,10 +102,42 @@ $(document).on("click", ".flip-card", function() {
 });
 
 
+  $(document).on("click", ".flip-card", function() {
+
+    var itemUrl = $(this).attr("data-url");
+
+    //grabbing the carrousel "type" to grab on click 
+    //empty the modal before adding anything else in 
+    $(".modal-content").empty();
+    
+               //store the photographer class data into a var
+           
+            //store the link class data into a var
+             linkData = itemUrl;
+        
+            //adding an image 
+            var newModalImg = $("<img>"); 
+            //adding the src with the link to the class of src assigned to the image in the AJAX call
+            newModalImg.attr("src", itemUrl)
+            newModalImg.attr("class","ModalPicture")
+
+            //giving the image a smaller size
+            //  newModalImg.height(370).width(530)
+
+            //appending everything to the Modal 
+            $(".modal-content").append(newModalImg);
+            $(".modal-content").append("<br>"+"<a href=" + linkData + ">" + `<div class="waves-effect waves-green btn-flat">Link` +"</a>");
+
+            $('#modal1').modal();
+            $('#modal1').modal("open");
+          
+    
+});
+
+
 
 
 function displaySearch() {
-
     if (((selectedSite === "select" || selectedSite === "pexels") && (selectedType === "select" || selectedType === ".jpeg")) || ($("#photographer").val().trim() !== "")) {
         $.ajax({
             headers: {
