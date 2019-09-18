@@ -6,10 +6,6 @@ h4 {
     color: rgba(0, 101, 148, 0.7);
     text-shadow: 1px 1px #c9c9c9;
 }
-/* #spacing{
-    margin: 30%;
-} */
-
 .page-footer {
     position: fixed;
     margin-bottom: 0%;
@@ -43,18 +39,7 @@ nav ul a {
 }
 /* style updates on the mobile nav bar*/
 .sidenav{
-    height: 25%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.modal-content{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.ModalPicture{
-    border-radius: 5%;
-}
-
-.modal-footer{
+    height: 20%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -233,9 +218,6 @@ body {
     justify-content: space-evenly;
     margin-left: 6.5%;
 }
-#imgSearchFlip:last-child {
-    margin-bottom: 10%
-  }
 
 
 /* Three columns side by side */
@@ -252,17 +234,12 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #d7f7ff;
     text-shadow: 1px 1px #8b8b8b;
-    /* position: fixed; */
+    position: fixed;
     margin-bottom: 0%;
     bottom: 0;
     width: 100%;
-    /* margin-top: 45%; */
 }
 
-
-.email-address{
-    font-size:1.3vw;
-}
 
 /* Display the columns below each other instead of side by side on small screens */
 
@@ -284,9 +261,6 @@ body {
     }
     .flip-card {
         width: 50%;
-    }
-    .email-address {
-        font-size:1rem;
     }
 }
 
@@ -313,15 +287,9 @@ body {
     }
 }
 
-@media screen and (min-width:993px) {
-    .email-address{
-        font-size:80%;
-    }
-}
-
 @media only screen and (min-width: 1200px) {
     html {
-        /* font-size: 15px; */
+        font-size: 15px;
     }
 }
 
@@ -361,44 +329,3 @@ body {
     width: -webkit-fill-available;
 }
 
-#modal1{
-    height: 450px;
-    width: 600px;
-}
-
-.ModalPicture {
-   height:340px;
-   width:530px;
-}
-
-
-
-@media screen and (max-width: 607px) {
-    #modal1 {
-        height:340px;
-        width: 400px;
-    }
-
-    .ModalPicture {
-        height: 250px  !important;
-        width: 340px  !important;
-    }
-
-    
-}
-
-
-
-@media screen and (max-width: 375px) {
-    #modal1 {
-        height:290px;
-        width: 330px;
-    }
-
-    .ModalPicture {
-        height: 200px  !important;
-        width: 290px  !important;
-    }
-
-    
-}
