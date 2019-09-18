@@ -65,14 +65,6 @@ $("select.siteImg").change(function() {
     selectedSite = $(this).children("option:selected").val();
 });
 
-
-
-$(document).on("click", ".flip-card", function() {
-    var itemUrl = $(this).attr("data-url");
-    alert(itemUrl);
-});
-
-
 $(document).ready(function() {
     $('.sidenav').sidenav();
 });
@@ -192,7 +184,7 @@ function displaySearch() {
 
     if (((selectedSite === "select" || selectedSite === "unsplash") && (selectedType === "select" || selectedType === ".jpg")) || ($("#photographer").val().trim() !== "")) {
         $.ajax({
-            url: "https://api.unsplash.com/search/photos?page=1&query='" + userInput + "'cat&client_id=472a152bc2a07709c0d4f5b008a8d10af25bb70ba35abbdd0aa4badc9c488731",
+            url: "https://api.unsplash.com/search/photos?page=1&query='" + userInput + "'&client_id=472a152bc2a07709c0d4f5b008a8d10af25bb70ba35abbdd0aa4badc9c488731",
             method: "GET"
         }).then(function(params) {
             console.log("unsplashhh         " + params);
