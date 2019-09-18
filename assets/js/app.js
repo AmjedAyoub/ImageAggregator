@@ -167,11 +167,11 @@ function displaySearch() {
 
                     newcardFront.append(newimg);
                     var newcardBack = $("<div class='flip-card-back' style='width:250px;height:200px'>");
-                    var newinfo1 = $("<h5>");
-                    newinfo1.text(params.photos[i].photographer);
-                    var newinfo2 = $("<h5>");
-                    newinfo2.text("Photographer: " + params.photos[i].photographer_url);
-                    var newinfo3 = $("<h5>");
+                    var newinfo1 = $("<h6>");
+                    newinfo1.text("Photographer: " + params.photos[i].photographer);
+                    var newinfo2 = $("<h6>");
+                    newinfo2.text(params.photos[i].photographer_url);
+                    var newinfo3 = $("<h6>");
                     newinfo3.text("Site: www.Pexels.com");
                     newcardBack.append(newinfo1, newinfo2, newinfo3);
                     newcard.append(newcardFront, newcardBack);
@@ -196,11 +196,11 @@ function displaySearch() {
 
                     newcardFront.append(newimg);
                     var newcardBack = $("<div class='flip-card-back' style='width:250px;height:200px'>");
-                    var newinfo1 = $("<h5>");
+                    var newinfo1 = $("<h6>");
                     newinfo1.text("Photographer: " + params.photos[i].photographer);
-                    var newinfo2 = $("<h5>");
+                    var newinfo2 = $("<h6>");
                     newinfo2.text(params.photos[i].photographer_url);
-                    var newinfo3 = $("<h5>");
+                    var newinfo3 = $("<h6>");
                     newinfo3.text("Site: www.Pexels.com");
                     newcardBack.append(newinfo1, newinfo2, newinfo3);
                     newcard.append(newcardFront, newcardBack);
@@ -243,13 +243,13 @@ function displaySearch() {
 
                     newcardFront.append(newimg);
                     var newcardBack = $("<div class='flip-card-back' style='width:250px;height:200px'>");
-                    var newinfo1 = $("<h5>");
+                    var newinfo1 = $("<h6>");
                     newinfo1.text("Photographer: " + results[j].user.name);
-                    var newinfo2 = $("<h5>");
+                    var newinfo2 = $("<h6>");
                     newinfo2.text(results[j].user.links.html);
-                    var newinfo3 = $("<h5>");
+                    var newinfo3 = $("<h6>");
                     newinfo3.text("Site: www.Unsplash.com");
-                    var newinfo4 = $("<h5>");
+                    var newinfo4 = $("<h6>");
                     newinfo4.text("Description: " + results[j].alt_description);
                     newcardBack.append(newinfo1, newinfo2, newinfo4, newinfo3);
                     newcard.append(newcardFront, newcardBack);
@@ -277,13 +277,13 @@ function displaySearch() {
 
                     newcardFront.append(newimg);
                     var newcardBack = $("<div class='flip-card-back' style='width:250px;height:200px'>");
-                    var newinfo1 = $("<h5>");
+                    var newinfo1 = $("<h6>");
                     newinfo1.text("Photographer: " + results[j].user.name);
-                    var newinfo2 = $("<h5>");
+                    var newinfo2 = $("<h6>");
                     newinfo2.text(results[j].user.links.html);
-                    var newinfo3 = $("<h5>");
+                    var newinfo3 = $("<h6>");
                     newinfo3.text("Site: www.Unsplash.com");
-                    var newinfo4 = $("<h5>");
+                    var newinfo4 = $("<h6>");
                     newinfo4.text("Description: " + results[j].alt_description);
                     newcardBack.append(newinfo1, newinfo2, newinfo4, newinfo3);
                     newcard.append(newcardFront, newcardBack);
@@ -324,9 +324,9 @@ function displaySearch() {
 
                 newcardFront.append(newimg);
                 var newcardBack = $("<div class='flip-card-back' style='width:250px;height:200px'>");
-                var newinfo3 = $("<h5>");
+                var newinfo3 = $("<h6>");
                 newinfo3.text("Site: www.Giphy.com");
-                var newinfo1 = $("<h5>");
+                var newinfo1 = $("<h6>");
                 newinfo1.text("Descreption: " + params.data[k].title);
                 newcardBack.append(newinfo1, newinfo3);
                 newcard.append(newcardFront, newcardBack);
