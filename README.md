@@ -66,5 +66,8 @@ Check out the team! Feel free to check out how responsive the page is.
 This application is deployed on GitHub Pages, [Try it yourself](https://wenhaowu27.github.io/ImageAggregator/).\
 This application is published on [GitHub](https://github.com/AmjedAyoub/ImageAggregator).
 
+## Authors
+See contribution history [here](https://github.com/AmjedAyoub/ImageAggregator/graphs/contributors).
+
 ## Future updates
 At the moment, this app is the minimum viable product. For future updates; improve the UI/UX, and add more functionality and features.
