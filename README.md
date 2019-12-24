@@ -35,7 +35,7 @@ Carousels that display the most popular images from Pexels, Giphy and Upsplash. 
 Once an image catches your eye feel free to click on it, this will lead you to a display that you can go to the direct link, 
 or copy that link to the clipboard.
 
-![Image](./assets/images/1.PNG)
+![Image](./assets/Images/1.PNG)
 
 ### Search Page:
 
@@ -47,13 +47,13 @@ The advanced search allows a user to narrow down their search criteria by size, 
 Once an image has been found, feel free to click on it to see a bigger version of an image and if you wish to go to the direct link, 
 click on the link button.
 
-![Image](./assets/images/2.PNG)
+![Image](./assets/Images/2.PNG)
 
 ### About Page:
 
 Check out the team! Feel free to check out how responsive the page is.  
 
-![Image](./assets/images/3.PNG)
+![Image](./assets/Images/3.PNG)
 
 ## Technologies & Tools
 * HTML  
